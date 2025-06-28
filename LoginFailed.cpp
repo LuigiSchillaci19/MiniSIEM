@@ -84,12 +84,12 @@ void ExtractUsefulEventData(LPCWSTR xml)
     ExtractValue(xml, L"<Data Name='ProcessName'>", procName, 256);
     ExtractValue(xml, L"<Data Name='IpAddress'>", ip, 64);
 
-    wprintf(L"\n[EVENTO 4625 - LOGON FALLITO]\n");
-    wprintf(L"Data/Ora: %s\n", time);
-    wprintf(L"Utente bersaglio: %s\n", targetUser);
-    wprintf(L"Tipo di logon: %s\n", logonType);
-    wprintf(L"Motivo: %s | Status: %s | SubStatus: %s\n", failureReason, status, subStatus);
-    wprintf(L"Processo: %s\n", procName);
+    wprintf(L"\n[Event Code 4625 - LOGON Failed]\n");
+    wprintf(L"Timestamp: %s\n", time);
+    wprintf(L"User: %s\n", targetUser);
+    wprintf(L"Type: %s\n", logonType);
+    wprintf(L"Reason: %s | Status: %s | SubStatus: %s\n", failureReason, status, subStatus);
+    wprintf(L"Process: %s\n", procName);
     wprintf(L"IP: %s\n", ip);
 }
 
