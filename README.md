@@ -1,6 +1,4 @@
-This tool analyzes the Windows Security Event Log to detect using :
-
-Failed login attempts (EventID 4625) from the past 30 days 
+This tool analyzes the Windows Security Event Log to detect Failed login attempts (EventID 4625) from the past 30 days 
 
 ⚠️ Note: The program must be run with administrator privileges to access the Security log.
 
